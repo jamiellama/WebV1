@@ -1,0 +1,8 @@
+body {
+    background-color: #0F0E2D;
+  }
+
+.navbar-nav > li{
+    padding-left:20px;
+    padding-right:20px;
+  }
