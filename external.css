@@ -1,8 +1,28 @@
 body {
-    background-color: #0F0E2D;
-  }
+  height: 100vh;
+  background-color: #0A0A1F;
+}
 
-.navbar-nav > li{
-    padding-left:20px;
-    padding-right:20px;
-  }
+.navbar-nav>li {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#3DLogo {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+#3DLogo img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: contain;
+}
