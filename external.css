@@ -1,6 +1,7 @@
 body {
   height: 100vh;
   background-color: #0A0A1F;
+  font-family: 'Yantramanav', 'serif';
 }
 
 .navbar-nav>li {
@@ -26,3 +27,29 @@ body {
   left: 0;
   object-fit: contain;
 }
+
+#main-logo {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+#header-text {
+  position: absolute;
+  margin-top: -150px;
+  top: 0;
+  left: 200;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+
+
