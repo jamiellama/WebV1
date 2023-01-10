@@ -53,5 +53,25 @@ body {
   overflow: hidden;
 }
 
+.bi-arrow-down-circle {
+  font-size: 3em;  
+  cursor: pointer;
+  background: white;
+  background-clip: text;
+  -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.bi-arrow-down-circle:hover {
+  font-size: 3em;  
+  cursor: pointer;
+
+  background: -webkit-radial-gradient(33% 100% circle, #FED373 4%, #F15245 30%, #D92E7F 62%, #9B36B7 85%, #515ECF);
+  background: radial-gradient(circle at 33% 100%, #FED373 4%, #F15245 30%, #D92E7F 62%, #9B36B7 85%, #515ECF);
+  background-clip: text;
+  -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
 
 
