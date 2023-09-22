@@ -5,90 +5,74 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jamie Larkin - Software Developer</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <title>Jamie Larkin</title>
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Yantramanav">
-    <link rel="stylesheet" href="external.css">
+
 </head>
-<div class="container-fluid" id="background-logos">
-    <img src="https://i.ibb.co/jR6cyQL/logo-background-animation-V6.png" alt="animated-background"
-        class="object img-fluid w-100" data-value="5">
-</div>
-<div class="container overflow-hidden">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
-        <div class="container-fluid">
-            <a class="navbar-brand me-2" href="#">
-                <img src="https://i.ibb.co/L5sk7mv/web-Logo-V2.png" height="40" alt="Logo" loading="lazy"
-                    style="margin-top: -1px;" />
-            </a>
-            <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="navbarTop"
-                aria-controls="navbarTop" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="fas fa-bars"></i>
-            </button>
 
-            <div class="collapse navbar-collapse" id="navbarTop">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+<body>
+    <div class="container">
 
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">About</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Projects</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li>
-                </ul>
-                <div class="d-flex align-items-center">
-                    <button type="button" class="btn btn-outline-primary me-3">
-                        CV | Resume
-                    </button>
-                </div>
-            </div>
-        </div>
-    </nav>
-
-    <body>
-
-        <div class="col py-3">
-            <div class="container" id="header-text">
-                <div class="col py-5 px-5">
-                    <div class="row">
-                        <h4 class="lead text-light">Hi, my name is</h4>
-                    </div>
-                    <div class="row">
-                        <h1 class="display-2 text-light">Jamie Larkin</h1>
-                    </div>
-                    <div class="row">
-                        <h3 class="text-light">I'm a graduate software developer</h3>
-                    </div>
-                </div>
-            </div>
-            <div class="container py-4" id="main-logo">
-                <img src="https://i.ibb.co/dWTTkRC/renderv3.png" alt="renderv3" height="450px" width="500px">
-            </div>
-            <div class="row">
-                <div class="col d-flex">
-                <a class="btn bg-outline-primary text-white" href="#!" role="button">
-                    ABOUT ME
-                    <i class="bi bi-arrow-down-circle"></i>
-                  </a>
-                </div>
-
+        <div class="nav-button-container">
+            <div class="nav-button-grid">
+                <a href="#home" data-section="home" class="navbutton"></a>
+                <a href="#about" data-section="about" class="navbutton"></a>
+                <a href="#projects" data-section="projects" class="navbutton"></a>
+                <a href="#contact" data-section="contact" class="navbutton"></a>
             </div>
         </div>
 
+        <div class="social-icon-container">
+            <div class="social-icon-grid">
+                <a href="https://github.com/jamiellama" target="_blank" class="social-icon"><i
+                        class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/jamie-larkin-927b9b17b/" target="_blank" class="social-icon"><i
+                        class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://www.instagram.com/jamielarkin98/" target="_blank" class="social-icon"><i
+                        class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+
+        <nav>
+            <div class="nav-link-container">
+                <a href="#home" data-section="home" class="nav-links">HOME</a>
+                <a href="#about" data-section="about" class="nav-links">ABOUT</a>
+                <a href="#projects" data-section="projects" class="nav-links">PROJECTS</a>
+                <a href="#contact" data-section="contact" class="nav-links">CONTACT</a>
+            </div>
+        </nav>
+
+        <section id="home" class="home">
+            <div class="home-content-grid">
+                    <div class="home-grid-text-item-1">
+                        <h1>Hi, my name is</h1>
+                    </div>
+                    <div class="home-grid-text-item-2">
+                        <h1>Jamie Larkin</h1>
+                    </div>
+                    <div class="home-grid-text-item-3">
+                        <h2>I'm a Software Engineer</h2>
+                    </div>
+                    <div class="home-grid-logo-item">
+                        <div class="container" id="3DLogo">
+                            <img src="https://i.ibb.co/dWTTkRC/renderv3.png" class="object" alt="renderv3"
+                                height="450px" width="500px" data-value="5">
+                        </div>
+                    </div>
+                
+            </div>
+        </section>
+
+        <section id="about" class="about">about</section>
+        <section id="projects" class="projects">projects</section>
+        <section id="contact" class="contact">contact</section>
 
 
-    </body>
-    <script src="jquery-3.6.1.min.js"></script>
-    <script src="bgLogoAnimation.js"></script>
-    <script src="divMove.js"></script>
 
-</div>
+    </div>
+    <script src="nav.js"></script>
+    <script src="https://kit.fontawesome.com/dbb4d7904b.js" crossorigin="anonymous"></script>
+</body>
 
 </html>

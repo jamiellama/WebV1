@@ -1,0 +1,218 @@
+/*
+Colours
+Purple: #5919ca
+Blue: #30cdfb
+Green: #84f3b6
+Dark Blue: #0A0A1F 
+*/
+
+
+body {
+    font-family: 'Yantramanav', 'serif';
+    padding: 0;
+    margin: 0;
+}
+.container {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-gap: 0px;
+
+
+    grid-template-columns: 100vw;
+    grid-template-rows: 100vh 100vh 100vh 100vh;
+    grid-template-areas:
+        "home"
+        "about"
+        "projects"
+        "contact";
+}
+
+.nav-button-container {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 300;
+    pointer-events: none;
+}
+
+.nav-button-grid {
+    display: grid;
+    grid-gap: .5rem;
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.navbutton {
+    width: 15px;
+    height: 15px;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 100%;
+    cursor: pointer;
+    pointer-events: all;
+    position: relative;
+}
+
+.navbutton::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 3px;
+    background-color: transparent;
+    transition: 0.2s;
+    border-radius: 100%;
+}
+
+.navbutton:hover::after {
+    background-color: #30cdfb;
+}
+
+.navbutton.active::after {
+    background-color: #30cdfb;
+}
+
+.social-icon-container {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 200;
+    pointer-events: none;
+}
+
+.social-icon-grid {
+    display: grid;
+    grid-gap: .5rem;
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.social-icon {
+    cursor: pointer;
+    pointer-events: all;
+    font-size: 30px;
+    color: white;
+}
+
+.social-icon:hover {
+    color: #30cdfb;
+}
+
+nav {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #0A0A1F;
+}
+
+.nav-links {
+    color: white;
+    text-decoration: none;
+    margin: 0px 30px;
+    font-size: 17px;
+}
+
+.nav-links:hover{
+    color: lightgray;
+    border-bottom: #30cdfb solid 2px;
+}
+
+.nav-links.active {
+    color: lightgray;
+    border-bottom: #30cdfb solid 2px;
+}
+  
+.home {
+    grid-area: home;
+    background-color: #0A0A1F;
+}
+
+.home-content-grid {
+    margin: auto;
+    padding-top: 150px;
+    width: 70%;
+    display: grid;
+    grid-template-columns: 55% 45%;
+    grid-template-rows: 5% 5% 20% 70%;
+}
+
+.home-grid-text-item-1 {
+    text-align: left;
+    grid-row: 2;
+    grid-column: 1;
+    color: #30cdfb;
+    font-size: 30px;
+}
+
+.home-grid-text-item-2 {
+    text-align: left;
+    grid-row: 3;
+    grid-column: 1;
+    color: white;
+    font-size: 60px;
+}
+
+.home-grid-text-item-3 {
+    text-align: left;
+    grid-row: 4;
+    grid-column: 1;
+    color: white;
+    font-size: 30px;
+}
+
+.home-grid-logo-item {
+    grid-row-start: 1;
+    grid-row-end: 4;
+    grid-column: 2;
+
+ 
+}
+
+#3DLogo {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  #3DLogo img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: contain;
+  }
+
+.about {
+    grid-area: about;
+    background-color: aquamarine;
+}
+
+.projects {
+    grid-area: projects;
+    background-color: blue;
+}
+
+.contact {
+    grid-area: contact;
+    background-color: yellow;
+}
